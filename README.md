@@ -148,3 +148,8 @@ The app uses LangChain's LCEL pipe (`|`) syntax to chain a `PromptTemplate` dire
 This project is open source and available under the [MIT License](LICENSE).
 
 
+Screenshots
+
+![image alt](https://github.com/akashcbe/RestaurantNameGenerator/blob/6e12b452108260e1fff01addf05f8dd8d3137d88/Screenshot%202026-04-18%20113050.png)
+
+
