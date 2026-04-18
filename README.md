@@ -153,6 +153,7 @@ Screenshots
 
 ![image alt](https://github.com/akashcbe/RestaurantNameGenerator/blob/6e12b452108260e1fff01addf05f8dd8d3137d88/Screenshot%202026-04-18%20113050.png)
 ![image alt](https://github.com/akashcbe/RestaurantNameGenerator/blob/4e92091a13f3b0cfd6d16d58988a6e9163f4db30/Screenshot%202026-04-18%20113634.png)
+![image alt](https://github.com/akashcbe/RestaurantNameGenerator/blob/43ac003c6557bddbdb367aa085326ae1d1f7a74e/Screenshot%202026-04-18%20113648.png)
 
 
 
