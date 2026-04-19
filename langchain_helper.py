@@ -1,9 +1,10 @@
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+import os
 
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
-    api_key="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"
+    api_key=os.environ.get("GROQ_API_KEY", "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")
 )
 
 # Prompt 1 → Restaurant name
@@ -14,11 +15,9 @@ Suggest ONE fancy restaurant name for {cuisine} cuisine.
 Return ONLY the restaurant name.
 Do not give explanation.
 """
-
 )
 
 name_chain = prompt_template_name | llm
-
 
 # Prompt 2 → Menu items
 prompt_template_items = PromptTemplate(
@@ -34,10 +33,10 @@ food_items_chain = prompt_template_items | llm
 
 
 def generate_restaurant_name_and_items(cuisine):
-
     # Step 1 → Generate restaurant name
     name = name_chain.invoke({"cuisine": cuisine}).content
 
+    # Step 2 → Generate menu items
     menu = food_items_chain.invoke({
         "restaurant_name": name
     }).content
